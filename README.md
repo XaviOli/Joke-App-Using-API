@@ -70,9 +70,9 @@ We implemented the possibility of alternating different jokes.
 
 We connect with another API.
 
-## STEP 6
+## STEP 6 
 
-Maquetar la web de chistes y tiempo meteorológico conforme a la siguiente pantalla:
+Layout the jokes and weather website according to the following screen:
 
 ![maqueta-2](./images/maqueta.png)
 

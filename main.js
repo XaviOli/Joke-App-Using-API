@@ -1,13 +1,11 @@
-const loadJokes = async() => {
-    try {
-        const response = await fetch('https://icanhazdadjoke.com');
+const API_URL = "https://icanhazdadjoke.com/";
 
-        console.log(response);
-
-        const data = await response.jason();
-        console.log (data);
-    } catch (error){
-        console.log(error);
-    }
+async function getAnotherJoke() {
+  const dadJokes = await fetch(API_URL, {
+    headers: {
+      Accept: "application/json",
+    },
+  }).then((response) => response.json());
+  console.log(dadJokes.joke);
 }
-loadJokes();
+

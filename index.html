@@ -5,19 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joke-App-Using-API</title>
-    <link rel="stylesheet" href="./styles.css/">
+    <link rel="stylesheet" href="./styles.css/colours.css">
 
       <!-- GOOGLE FONTS -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,500&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 
 </head>
-<body>
-    <div id="app"></div>
+  <nav>
+      <div id="forecast"></div>
+  </nav>
 
-    <script src="./main.js"></script>
-    
+<body>
+  <header>
+    <div class="container"></div>
+  </header>
+    <main>
+      <div class="container__jokes" id="text">
+        <h1 class="container__title">Preparat per riure?</h1>
+      </div>
+            <div class="container__score">
+              <button type="button" id="btn-1" onclick="getJokes(1)">i</button>
+              <button type="button" id="btn-2" onclick="getJokes(2)">i</button>
+              <button type="button" id="btn-3" onclick="getJokes(3)">i</button>
+            </div>
+      <div>
+        <button class="container__boton"  onclick="getAnotherJoke()"  id="btn">Següent acudit</button>
+      </div>
+    </main>
+  <script src="./main.js"></script>
 </body>
 </html>

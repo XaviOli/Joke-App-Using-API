@@ -62,8 +62,3 @@ main {
     transform: translate(0.5em, 0.5em);
     box-shadow: 0.5em 0.5em;
 }
-
-.ugly {
-    font-size: 3rem;
-    color: var(--yellow-color);
-}

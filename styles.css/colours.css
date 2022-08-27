@@ -1,3 +1,12 @@
+:root {
+    --background-color: #fffffe;
+    --yellow-color: #e7ca66;
+    --violet-color: #8774b2;
+    --black-color: #0E255C;
+    --header-size: 4rem;
+    --font: 1.8rem;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,4 +16,54 @@
 html {
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: auto;
+}
+
+header {
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--background-color);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.container__title {
+    font-size: var(--header-size);
+    color: var(--black-color);
+}
+
+.container__boton {
+    background: var(--yellow-color);
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 1.8rem;
+    border: 0.3rem solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    display: flex;
+
+}
+
+.container__boton:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.container__boton:active {
+    transform: translate(0.5em, 0.5em);
+    box-shadow: 0.5em 0.5em;
+}
+
+.ugly {
+    font-size: 3rem;
+    color: var(--yellow-color);
 }

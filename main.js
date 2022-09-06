@@ -16,7 +16,7 @@ let date = d.toISOString = "none";
 const weatherApi = "https://api.openweathermap.org/data/2.5/weather?q=Barcelona&exclude=hourly,daily&units=metric&lang=sp&appid=f033bc883319078da9dd983162b7cb55";
 
 // Exercise 1: Pressing the button will fetch the jokes API
-/* Utilizando Promises */
+// Using Promises //
 
 const dadJokes = () => {
   fetch(`${API_URL}`, {
@@ -72,3 +72,5 @@ function toggleFunction(){
 }
 
 btnAcudit.addEventListener("click", toggleFunction);
+
+// Exercise 6: Layout the jokes and weather website according to the mock-up

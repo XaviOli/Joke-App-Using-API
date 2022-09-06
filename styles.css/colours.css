@@ -1,3 +1,6 @@
+/* Exercise 6: Layout the jokes and weather website according to the mock-up */
+/* Mobile first */
+
 :root {
     --background-color: #fffffe;
     --yellow-color: #e7ca66;
@@ -13,6 +16,8 @@
     margin: 0;
     padding: 0;
 }
+
+/* Relative lenght unit */
 
 html {
     font-size: 62.5%;
@@ -55,7 +60,6 @@ h1 {
     padding: 1rem;
     width: auto;
     color: var(--background-color);
-    /* background-color: aqua; */
 }
 
 #text {

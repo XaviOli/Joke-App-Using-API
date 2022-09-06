@@ -6,29 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joke-App-Using-API</title>
     <link rel="stylesheet" href="./styles.css/colours.css">
+    <link rel="stylesheet" href="./styles.css/tablet.css" media="min-width: 600px">
+    <link rel="stylesheet" href="./styles.css/desktop.css" media="min-width: 800px">
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 </head>
   <nav>
-    <div id="forecast"></div>
+    <div id="forecast"><img src="./forecast/rain.png" alt="cloudy"></div>
   </nav>
   <body>
-    <header>
-      <div class="container"></div>
-    </header>
-    <main>
-      <div class="container__jokes" id="text">
-        <h1 class="container__title">Preparat per riure?</h1>
+    <section>
+      <div class="container">
+        <h1>Preparat per riure?</h1>
+          <div id="text"></div>
+        <div id="score" class="container__scoring">
+          <button id="1" class="sad-face" type="button" onclick="getScore(1)"><img src="./images/face-sad.png" alt="sad"></button>
+          <button id="2" class="dubt-face" type="button" onclick="getScore(2)"><img src="./images/face-dubt.png" alt="dubt"></button>
+          <button id="3" class="happy-face" type="button" onclick="getScore(3)"><img src="./images/face-happy.png" alt="happy"></button>
+        </div>
+        <button id="btn-next" class="container__button">Següent acudit</button>
       </div>
-            <div class="container__score">
-              <button type="button" id="btn-1" onclick="getJokes(1)"></button>
-              <button type="button" id="btn-2" onclick="getJokes(2)"></button>
-              <button type="button" id="btn-3" onclick="getJokes(3)"></button>
-            </div>
-      <div>
-        <button class="container__boton"  onclick="getAnotherJoke()"  id="btn">Següent acudit</button>
-      </div>
-    </main>
+        <div class="container__bubble1"><img src="./images/blob1.svg" alt="Large purple bubble 1"></div>
+        <div class="container__bubble2"><img src="./images/blob2.svg" alt="Small purple bubble 2"></div>
+        <div class="container__bubble3"><img src="./images/blob3.svg" alt="Small purple bubble 3"></div>
+    </section>
   <script src="./main.js"></script>
 </body>
 </html>

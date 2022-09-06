@@ -1,0 +1,7 @@
+@media (min-width: 300px) {
+    #text {
+        margin: auto;
+        width: 80vw;
+        text-align: center;
+    }
+}

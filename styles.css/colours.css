@@ -1,6 +1,7 @@
 :root {
     --background-color: #fffffe;
     --yellow-color: #e7ca66;
+    --yellowly-color: #fedb75;
     --violet-color: #8774b2;
     --black-color: #0E255C;
     --header-size: 4rem;
@@ -22,43 +23,123 @@ body {
     margin: auto;
 }
 
-header {
-    width: 100vw;
-    height: 15vh;
-    background-color: var(--background-color);
+nav {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+    margin: 1rem;
+    z-index: inherit;
 }
 
-main {
+#forecast {
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
+    background-size: 80rem;
 }
 
-.container__title {
-    font-size: var(--header-size);
-    color: var(--black-color);
+h1 {
+    padding-bottom: 4rem;
+    font-size: 2rem;
 }
 
-.container__boton {
-    background: var(--yellow-color);
-    font-family: inherit;
-    padding: 0.6em 1.3em;
+.container {
     font-weight: 900;
-    font-size: 1.8rem;
-    border: 0.3rem solid black;
-    border-radius: 0.4em;
-    box-shadow: 0.1em 0.1em;
-    display: flex;
-
+    text-align: center;
+    padding: 1rem;
+    width: auto;
+    color: var(--background-color);
+    /* background-color: aqua; */
 }
 
-.container__boton:hover {
-    transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.15em 0.15em;
+#text {
+    margin: auto;
+    width: 30vw;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-.container__boton:active {
-    transform: translate(0.5em, 0.5em);
-    box-shadow: 0.5em 0.5em;
+.container__button {
+    position: relative;
+    font-weight: 600;
+    height: 4rem;
+    padding: 1.2rem 2rem;
+    outline: none;
+    border: 0.2rem solid black;
+    background-color: transparent;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+  
+  .container__button:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0.7rem;
+    left: 0.7rem;
+    height: 100%;
+    background-color: var(--yellowly-color);
+    z-index: -1;
+    transition: all 0.35s;
+    border-radius: inherit;
+  }
+  
+  .container__button:hover:after {
+    top: 0rem;
+    left: 0rem;
+  }
+
+.container__scoring button {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    padding-top: 1.3rem;
+}
+
+.container__bubble1 {
+    position: absolute;
+    width: 143%;
+    bottom: 0%;
+    left: -21%;
+    z-index: -7;
+}
+
+.container__bubble2 {
+    position: absolute;
+    width: 25%;
+    bottom: 5%;
+    left: 7%;
+    z-index: -1;
+}
+
+.container__bubble3 {
+    position: absolute;
+    width: 25%;
+    top: 7%;
+    right: 7%;
+}
+
+#text {
+    margin: auto;
+    width: 30vw;
+    text-align: center;
+}
+
+.sad-face:hover {
+    transform: scale(1.5);
+}
+
+.dubt-face:hover {
+    transform: scale(1.5);
+}
+
+.happy-face:hover {
+    transform: scale(1.5);
 }

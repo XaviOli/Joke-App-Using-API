@@ -1,4 +1,4 @@
-# BRIEF
+# BRIEF 😀 😃 😄
 
 A coaching company is bringing an experiment to companies in Barcelona, ​​in which it is measuring the impact of humor and fun on productivity.
 

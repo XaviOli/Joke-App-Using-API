@@ -74,7 +74,7 @@ We connect with another API.
 
 Layout the jokes and weather website according to the following screen:
 
-[Link](https://xavioli.github.io/Joke-App-Using-API/)
+[See deployed web here](https://xavioli.github.io/Joke-App-Using-API/)
 
 ![maqueta-2](./images/maqueta.png)
 

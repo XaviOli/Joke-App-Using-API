@@ -12,7 +12,7 @@ Here are the instructions of the front end manager:
 
 - We can choose between Typescript or JasvaScript.
 
-## STEP 1
+## 🥶 STEP 1
 
 In this first exercise we will create the main screen that will display jokes to the user.
 
@@ -22,7 +22,7 @@ The operation should be as follows:
 
 - Pressing the "Next joke" button will fetch the jokes API and the joke in question will be displayed on the console.
 
-## STEP 2
+## 🥵 STEP 2
 
 Make a first approximation of the layout, placing each element in its place.
 
@@ -32,7 +32,7 @@ A reference of the placement of the elements is as follows:
 
 ![image-exercise-2](./images/exercise-2.png)
 
-## STEP 3
+## 🥴 STEP 3
 
 The company commissioning the project needs to monitor the use of this website for its study.
 
@@ -58,19 +58,19 @@ The three fields that we will take into account each object of the array are:
 
 The date of when the assessment was made must be saved in ISO format.
 
-## STEP 4
+## 😥 STEP 4
 
 Now that the website is designed to show jokes first thing in the morning so that we start the day well, we will add weather information, as it can be very useful.
 
 Consume a weather information API and display it on the web. This API should be said on opening, not via a button.
 
-## STEP 5
+## 🤗 STEP 5
 
 We implemented the possibility of alternating different jokes.
 
 We connect with another API.
 
-## STEP 6 
+## 📲 STEP 6 
 
 Layout the jokes and weather website according to the following screen:
 
